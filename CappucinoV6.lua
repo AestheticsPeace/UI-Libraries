@@ -34,10 +34,6 @@ local json = {
     end
 }
 
-if getgenv().cap_key ~= 'masterkey' then
-    print('error 301: unauthorized')
-end
-
 if not blurModule then
     getgenv().blurModule = loadstring(syn.request({Url = 'https://raw.githubusercontent.com/boop71/cappuccino-new/main/utilities/blurModule.lua', Method = 'GET'}).Body)()
 end
